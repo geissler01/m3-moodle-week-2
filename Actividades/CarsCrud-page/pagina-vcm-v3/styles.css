@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+button, p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: #fff;
+    max-height: 125px;
+}
+
+.b-1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 125px;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.b-2 img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+/* Ads */
+.ads-1 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5vh;
+    font-size: clamp(0.6rem, 1.4vw, 1.3rem);
+}
+
+.ad-1, .ad-2 {
+    width: 45%;
+    aspect-ratio: 16/9;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.ad-1 {
+    background-image: url(./img/BG-1.png);
+    background-color: rgba(112, 192, 241, 0.855);
+}
+
+.ad-2 {
+    background-image: url(./img/BG-2.png);
+    background-color: rgba(0, 0, 255, 0.621);
+}
+
+.t-ad-1, .t-ad-2 {
+    padding: 4%;
+    max-width: 50%;
+}
+
+.t-ad-1 h2, .t-ad-2 h2 {
+    font-size: 1.8em;
+}
+
+.t-ad-1 p, .t-ad-2 p {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+.b-ad-1, .b-ad-2 {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-left: 0.4em;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.3em 0.8em;
+    cursor: pointer;
+}
+
+.b-ad-1 {
+    background-color: blue;
+}
+
+.b-ad-2 {
+    background-color: rgb(112, 192, 241);
+}
+
+/* Search */
+.drop-off {
+    display: grid;
+    justify-items: center;
+}
+
+.c-browser {
+    position: relative;
+    height: clamp(50px, min(12vh, 6vw), 80px);
+    width: 95%;
+    margin-top: 6vh;
+    background-color: #fff;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+}
+
+.c-browser i {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #777;
+}
+
+.c-browser input {
+    padding-left: 4%;
+    font-size: 1rem;
+    width: 100%;
+    height: 60%;
+    border: 0.1px solid #333;
+    border-radius: 1rem;
+}
+
+/* Catalogue */
+.catalogue, .carros-recomendados {
+    display: grid;
+    justify-items: center;
+    margin-top: 4vh;
+}
+
+.catalogue h2, .carros-recomendados h2 {
+    width: 95%;
+    margin-top: 10vh;
+}
+
+.grid-popular-car, .grid-recomendation-car {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    gap: min(2vw, 3vh);
+    margin-top: 2vh;
+}
+
+.grid-recomendation-car {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+    border-radius: 0.5rem;
+    padding: 5% 6%;
+    font-size: clamp(0.3rem, 1.4vw, 1.3rem);
+    background-color: #fff;
+}
+
+.title-c {
+    position: relative;
+}
+
+.title-c h3 {
+    font-size: 1.5em;
+}
+
+.title-c p {
+    color: #777;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.heart {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+
+.car-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+    aspect-ratio: 10/3;
+}
+
+.car-photo img {
+    max-height: 90%;
+    max-width: 100%;
+}
+
+.ratio-photo {
+    aspect-ratio: 2.5/1;
+}
+
+.specification {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+}
+
+.specification div {
+    font-size: 0.9em;
+}
+
+.specification img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.price-rent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-rent p {
+    margin: 0;
+}
+
+.price-rent span {
+    color: #777;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.descount {
+    color: #777;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.price-rent button {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: blue;
+    border-radius: 0.2em;
+    color: #fff;
+}
+
+/* Footer */
+.container-footer {
+    font-size: clamp(0.6rem, 1.4vw, 1.3rem);
+    margin-top: 10vh;
+    padding: 4vh 3vw;
+    background-color: #fff;
+}
+
+.footer-dates {
+    display: flex;
+}
+
+.footer-dates p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.f-logo {
+    flex: 1;
+}
+
+.f-logo h2 {
+    font-size: 2em;
+}
+
+.f-logo a {
+    text-decoration: none;
+}
+
+.f-dates {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+}
+
+.f-dates h3 {
+    font-size: 1.2em;
+}
+
+.f-dates ul {
+    list-style: none;
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+.f-dates li {
+    padding: 0.5em 0 0.5em 0.2em;
+}
+
+.f-dates a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.split {
+    border: 1px solid #333;
+    margin: 3vh 0;
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-legal a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+}
+
+.policy-terms {
+    display: flex;
+    gap: 2em;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .ads-1 {
+        flex-direction: column;
+        align-items: center;
+        font-size: clamp(0.7rem, 2.3vw, 1.3rem);
+    }
+
+    .ad-1, .ad-2 {
+        width: 80%;
+    }
+
+    .grid-popular-car, .grid-recomendation-car {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        font-size: clamp(0.7rem, 2.3vw, 1.3rem);
+    }
+
+    .footer-dates {
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+        font-size: clamp(0.7rem, 2.3vw, 1.3rem);
+    }
+
+    .f-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-legal {
+        font-size: clamp(0.7rem, 2.3vw, 1.3rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        display: none;
+    }
+
+    .ads-1 {
+        font-size: clamp(0.5rem, 3vw, 1rem);
+    }
+
+    .ad-1, .ad-2 {
+        width: 95%;
+    }
+
+    .c-browser i {
+        left: 6%;
+    }
+
+    .c-browser input {
+        padding-left: 8%;
+    }
+
+    .grid-popular-car, .grid-recomendation-car {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        font-size: clamp(0.7rem, 5vw, 1rem);
+    }
+
+    .footer-dates {
+        font-size: clamp(0.7rem, 5vw, 1rem);
+    }
+
+    .f-dates {
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        font-size: clamp(0.7rem, 5vw, 1.3rem);
+    }
+}

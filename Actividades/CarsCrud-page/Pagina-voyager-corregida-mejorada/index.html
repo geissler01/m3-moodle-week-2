@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsCrud - Plataforma de Alquiler de Autos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://kit.fontawesome.com/4777e550f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-top" aria-label="Navegación principal">
+            <div class="b-1">
+                <div class="logo">
+                    <img src="./img/logo-CrashCrud.png" alt="Logo CarsCrud">
+                </div>
+                <div class="title">
+                    <h1><a href="">CarsCrud</a></h1>
+                </div>
+            </div>
+            <div class="b-2">
+                <a href="" aria-label="Perfil de usuario">
+                    <img src="./img/profile.png" alt="Foto de perfil" class="rounded-circle">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="ads-1" aria-labelledby="ads-title">
+            <h2 id="ads-title" class="visually-hidden">Promociones destacadas</h2>
+            <article class="ad-1">
+                <div class="t-ad-1">
+                    <div class="title-text-1">
+                        <h3>The Best Platform for Car Rental</h3>
+                        <p>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                    </div>
+                    <div class="b-ad-1"><button type="button">Rental Car</button></div>
+                </div>
+            </article>
+            <article class="ad-2">
+                <div class="t-ad-2">
+                    <div class="title-text-2">
+                        <h3>The Best Platform for Car Rental</h3>
+                        <p>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                    </div>
+                    <div class="b-ad-2"><button type="button">Rental Car</button></div>
+                </div>
+            </article>
+        </section>
+
+        <section class="drop-off" aria-label="Buscador de vehículos">
+            <form class="c-browser" role="search">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <label for="search-vehicle" class="visually-hidden">Buscar vehículo</label>
+                <input type="search" id="search-vehicle" class="browser" placeholder="Buscar vehículo">
+            </form>
+        </section>
+
+        <section class="catalogue" aria-labelledby="popular-title">
+            <div class="popular-car">
+                <h2 id="popular-title">Popular Car</h2>
+                <div class="grid-popular-car">
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>Koenigsegg</h3>
+                            <p>Sport</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo">
+                            <img src="./img/car-1.png" alt="Koenigsegg">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 90L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 2 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$99.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>Nissan GT-R</h3>
+                            <p>Sport</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo">
+                            <img src="./img/car-2.png" alt="Nissan GT-R">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 80L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 2 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$80.00 / <span>day</span></p>
+                                <p class="descount">$100.00</p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>Rolls-Royce</h3>
+                            <p>Sedan</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo">
+                            <img src="./img/car-3.png" alt="Rolls-Royce">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 70L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 4 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$96.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>Nissan GT-R</h3>
+                            <p>Sport</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo">
+                            <img src="./img/car-4.png" alt="Nissan GT-R">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 80L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 2 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$80.00 / <span>day</span></p>
+                                <p class="descount">$100.00</p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="carros-recomendados" aria-labelledby="recommendation-title">
+            <div class="recomendation-car">
+                <h2 id="recommendation-title">Recomendation Car</h2>
+                <div class="grid-recomendation-car">
+                    <!-- Card 5 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>All New Rush</h3>
+                            <p>SUV</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-5.png" alt="All New Rush">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 70L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 6 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$72.00 / <span>day</span></p>
+                                <p class="descount">$80.00</p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>CR-V</h3>
+                            <p>SUV</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-6.png" alt="CR-V">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 80L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 6 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$80.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>All New Terios</h3>
+                            <p>SUV</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-7.png" alt="All New Terios">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 90L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 6 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$74.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>CR-V</h3>
+                            <p>SUV</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-8.png" alt="CR-V">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 80L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 6 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$80.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>MSZX Exclusive</h3>
+                            <p>Hatchback</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-9.png" alt="MSZX Exclusive">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 70L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 4 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$76.00 / <span>day</span></p>
+                                <p class="descount">$80.00</p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 10 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>New MGZS</h3>
+                            <p>SUV</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-10.png" alt="New MGZS">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 80L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 6 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$81.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 11 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>MGZX Excite</h3>
+                            <p>Hatchback</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-11.png" alt="MGZX Excite">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 90L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 4 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$74.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+
+                    <!-- Card 12 -->
+                    <article class="card">
+                        <header class="title-c">
+                            <h3>New MGZS</h3>
+                            <p>SUV</p>
+                            <button type="button" class="heart" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </header>
+                        <figure class="car-photo ratio-photo">
+                            <img src="./img/car-12.png" alt="New MGZS">
+                        </figure>
+                        <ul class="specification">
+                            <li><i class="fa-solid fa-gas-pump"></i> 80L</li>
+                            <li><img src="./img/volant.svg" alt="Transmisión manual"> Manual</li>
+                            <li><i class="fa-solid fa-user-group"></i> 6 People</li>
+                        </ul>
+                        <footer class="price-rent">
+                            <div>
+                                <p>$80.00 / <span>day</span></p>
+                            </div>
+                            <button type="button">Rent Now</button>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-footer">
+        <div class="footer-dates">
+            <div class="f-logo">
+                <div class="logo-t">
+                    <h2><a href="">CarsCrud</a></h2>
+                    <p>Our vision is to provide convenience and help increase your sales business.</p>
+                </div>
+            </div>
+            <nav class="f-dates" aria-label="Enlaces del footer">
+                <div class="f-about">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="">How it works</a></li>
+                        <li><a href="">Featured</a></li>
+                        <li><a href="">Partnership</a></li>
+                        <li><a href="">Bussiness Relation</a></li>
+                    </ul>
+                </div>
+                <div class="f-comminity">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Podcast</a></li>
+                        <li><a href="">Invite a friend</a></li>
+                    </ul>
+                </div>
+                <div class="f-social">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="">Discord</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">X (twitter)</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <hr class="split">
+
+        <div class="footer-legal">
+            <div class="f-rights">
+                <a href=""><i class="fa-regular fa-copyright"></i>2025 crudzaso. All rights reserved</a>
+            </div>
+            <div class="policy-terms">
+                <a href="">Privacy & Privacy</a>
+                <a href="">Terms & Condicions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Clase auxiliar para ocultar texto solo para lectores de pantalla -->
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</body>
+</html>
